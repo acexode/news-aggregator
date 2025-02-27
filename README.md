@@ -12,7 +12,7 @@ A modern news aggregation platform built with React, TypeScript, and TailwindCSS
 
 ## Technologies Used
 
-- React 18
+- React
 - TypeScript
 - TailwindCSS
 - React Query
@@ -70,7 +70,7 @@ docker-compose down
 
 Using Docker Directly:
 ```bash
-docker stop news-aggregator 
+docker stop news-aggregator
 docker rm news-aggregator
 ```
 
