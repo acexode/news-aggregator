@@ -21,7 +21,7 @@ function App() {
       let allArticles: Article[] = [];
 
       if (sources === '' || sources.includes('newsapi')) {
-        const newsApiResults = await fetchNewsAPIArticles(query, sources, category, date);
+        const newsApiResults = await fetchNewsAPIArticles(query, category, date);
         allArticles = [...allArticles, ...newsApiResults];
       }
       if (sources === '' || sources.includes('guardian')) {

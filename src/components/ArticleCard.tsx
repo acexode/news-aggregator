@@ -1,14 +1,13 @@
 import React from "react";
 import { Article } from "../types/article";
-
+import placeholderImage from "../assets/placeholder.png";
 const ArticleCard: React.FC<{ article: Article }> = ({ article }) => {
-  console.log(article);
   return (
     <div className="border rounded p-4 mb-4 shadow-md">
       {article.urlToImage && (
         <div className="relative w-full pt-[56.25%]">
           <img
-            src={article.urlToImage || "/placeholder-image.jpg"}
+            src={article.urlToImage || placeholderImage}
             alt={article.title}
             className="absolute top-0 left-0 w-full h-full object-cover"
             onError={(e) => {
